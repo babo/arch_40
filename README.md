@@ -93,12 +93,12 @@ r4 : F6             c4 : D7        c10 : D0
 ##### Wiring Example With Underglow LED's:
 ![wiring_example_with_led](https://i.imgur.com/pITj7ql.jpg)
 
-____
-
 ## Firmware Flashing:
 
 #### PCB Builds:
 `PCB + Pro Micro flashing instructions coming soon...`
+
+____
 
 #### Handwired Builds:
 * Linux:
