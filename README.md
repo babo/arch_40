@@ -21,25 +21,32 @@
     * Compatability with Ergodox style keysets
 
 ## Assembly:
-* Stacked acrylic layer case, metal switch plate (or could also be acrylic)
+* Now includes option to assemble using a PCB and microcontroller, or can be handwired with a microcontroller
+    * **Huge thanks to [ibnuda](https://github.com/ibnuda) for designing the PCB!**
+* Stacked acrylic layer case, acrylic/metal switch plate 
     * Layer dimensions and path lengths are outlined in `path_length.md`
-
 * Files for laser cutting by Ponoko/other services in `./illustrator_files`
     * Includes case layer DXF files imported into Adobe Illustrator at 1:1 scale with units in millimeters
     * `final_cut_layout.eps` is Ponoko's P3 size template with case layers, **without plate**
+        * Use this if you choose to go with a metal plate
     * `final_cut_layout_plate.eps` is Ponoko's P3 size template with case layers, **with plate**
+        * Use this if you choose to go with an acrylic plate
 
-* Currently designed to be handwired with a Teensy2.0, may design a pcb later
+____
 
 #### Component list:
 * Acrylic case layers + plate
+* PCB (optional, can be handwired as well)
+    * Pro Micro (PCB is designed to use this microcontroller)
+    * Teensy2.0 (if handwiring and not using PCB)
 * (49) Cherry MX style switches
 * (1) 2u Cherry style **plate-mounted** stabilizer
-* Teensy2.0
 * Adafruit USB-mini breakout board (or a simple female USB-mini)
-* WS2812B LED strips
+* WS2812B LED strips (optional)
 * (49) 1N4184 diodes
 * M2 Standoffs and screws (10mm length standoffs, 5mm length screws)
+
+____
 
 #### Case Stack Order:
 1) `arch_40_case_layer0`
@@ -54,14 +61,19 @@
     * This layer can be added to the laser cut layout by copying the `arch_40_case_layer4` file and adding it to the layout
 * Resulting case height with 3mm acrylic layers + 1.5mm metal plate is 16.5mm
 
-#### Matrix:
+____
+
+#### PCB:
+![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
+
+____
+
+#### Handwiring:
+
+##### Matrix:
 ![matrix](https://i.imgur.com/ph9qbX4.jpg)
 
-#### Wiring Example:
-![wiring_example_no_led](https://i.imgur.com/JU2SwzP.png)
-![wiring_example_with_led](https://i.imgur.com/pITj7ql.jpg)
-
-#### Teensy2.0 Pinout:
+##### Teensy2.0 Pinout:
 * Column 0 = Backspace key column
 * Row 0 = QWERTY row
 ~~~
@@ -74,16 +86,30 @@ r3 : F5             c3 : B4         c9 : D1
 r4 : F6             c4 : D7        c10 : D0
                     c5 : C7        c11 : B7
 ~~~
+
+##### Wiring Example:
+![wiring_example_no_led](https://i.imgur.com/JU2SwzP.png)
+
+##### Wiring Example With Underglow LED's:
+![wiring_example_with_led](https://i.imgur.com/pITj7ql.jpg)
+
+____
+
 #### Firmware Flashing:
+
+##### For PCB Builds:
+`PCB + Pro Micro flashing instructions coming soon...`
+
+##### For Handwired Builds:
 * Linux:
     * The Teensy2.0 controller can be flashed easily with the [teensy-loader-cli](https://www.pjrc.com/teensy/loader_cli.html)
 
 ~~~
-$ teensy-loader-cli -mcu=atmega32u4 -w -v ./firmware/arch40firmware.hex
+$ teensy-loader-cli -mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
 ~~~
 * MacOS/Windows:
     * Can be flashed with the [Teensy Loader Application](https://www.pjrc.com/teensy/loader.html)
-#### LED Backlighting:
+##### LED Backlighting:
 * Default firmware `arch40firmware.hex` includes configuration for WS2812B LED backlighting strips
     * The data pin for the LED's is set to pin B1 on the Teensy2.0
     * Default 12 LED quantity, 10 backlight brightness levels, variable color hue
@@ -93,6 +119,9 @@ $ teensy-loader-cli -mcu=atmega32u4 -w -v ./firmware/arch40firmware.hex
 * Kerf of plate and case layers is set to 0.15mm (typical for Ponoko/ Laserboost/ Lasergist)
 
 ## To-do:
-* Add PCB files
+* Generate firmware for PCB with Pro Micro microcontroller
+* Add PCB + Pro Micro pinout table
+* Add PCB + Pro Micro firmware flashing instructions
+* Add image of default keymap
 
 ###### Model was created in Solidworks, then exported as STL/DXF. Feel free to use/modify/redistribute.
