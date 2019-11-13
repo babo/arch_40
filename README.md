@@ -95,12 +95,12 @@ r4 : F6             c4 : D7        c10 : D0
 
 ____
 
-#### Firmware Flashing:
+## Firmware Flashing:
 
-##### For PCB Builds:
+#### PCB Builds:
 `PCB + Pro Micro flashing instructions coming soon...`
 
-##### For Handwired Builds:
+#### Handwired Builds:
 * Linux:
     * The Teensy2.0 controller can be flashed easily with the [teensy-loader-cli](https://www.pjrc.com/teensy/loader_cli.html)
 
