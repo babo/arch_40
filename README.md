@@ -40,7 +40,9 @@ ____
     * Pro Micro (PCB is designed to use this microcontroller)
     * Teensy2.0 (if handwiring and not using PCB)
 * (49) Cherry MX style switches
-* (1) 2u Cherry style **plate-mounted** stabilizer
+* (1) 2u Cherry style stabilizer
+    * **PCB-mounted** if using a 3.0mm acrylic switch plate
+    * **Plate-mounted** if using a 1.5mm metal switch plate
 * Adafruit USB-mini breakout board (or a simple female USB-mini)
 * WS2812B LED strips (optional)
 * (49) 1N4184 diodes
