@@ -68,6 +68,20 @@ ____
 
 ![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
 
+##### Pro Micro Pinout:
+* Column 0 = ESC key column
+* Row 0 = QWERTY row
+~~~
+Rows:              Columns:                            LED:
+-----------------------------------------------------------------
+r0 : D3            c0 : F4         c6 : B2             vcc : VCC
+r1 : D1            c1 : F5         c7 : B6             gnd : GND
+r2 : D0            c2 : F6         c8 : B5            data : D2
+r3 : D4            c3 : F7         c9 : B4
+                   c4 : B1        c10 : E6
+                   c5 : B3        c11 : D7
+                                  c12 : C6
+~~~
 ____
 
 #### Handwiring:
@@ -76,7 +90,7 @@ ____
 ![matrix](https://i.imgur.com/ph9qbX4.jpg)
 
 ##### Teensy2.0 Pinout:
-* Column 0 = Backspace key column
+* Column 0 = ESC key column
 * Row 0 = QWERTY row
 ~~~
 Rows:               Columns:                            LED:
@@ -98,32 +112,36 @@ r4 : F6             c4 : D7        c10 : D0
 ## Firmware Flashing:
 
 #### PCB Builds:
-`PCB + Pro Micro flashing instructions coming soon...`
-
+* Linux:
+    * The Pro Micro controller can be flashed with [avrdude](https://www.nongnu.org/avrdude/)
+    * **Note:** Navigate to the `./firwmare` directory of the repo where the `arch40firmware_pcb.hex` file is to flash
+~~~
+$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex
+~~~
+##### LED Backlighting:
+* Default firmware `arch40firmware_pcb.hex` includes configuration for WS2812B LED backlighting strips
+    * The data pin for the LED's is set to pin D2 on the Pro Micro
+    * Default 12 LED quantity, 10 backlight brightness levels, variable color hue
+    * To change the LED configuration, the `arch40firmware_pcb.json` file can be uploaded to [Keyboard Firmware Builder](https://kbfirmware.com/) and edited/recompiled as desired
 ____
 
 #### Handwired Builds:
 * Linux:
-    * The Teensy2.0 controller can be flashed easily with the [teensy-loader-cli](https://www.pjrc.com/teensy/loader_cli.html)
+    * The Teensy2.0 controller can be flashed with the [teensy-loader-cli](https://www.pjrc.com/teensy/loader_cli.html)
 
 ~~~
-$ teensy-loader-cli -mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
+$ teensy-loader-cli --mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
 ~~~
 * MacOS/Windows:
     * Can be flashed with the [Teensy Loader Application](https://www.pjrc.com/teensy/loader.html)
 ##### LED Backlighting:
-* Default firmware `arch40firmware.hex` includes configuration for WS2812B LED backlighting strips
+* Default firmware `arch40firmware_hw.hex` includes configuration for WS2812B LED backlighting strips
     * The data pin for the LED's is set to pin B1 on the Teensy2.0
-    * Default 12 LED quantity, 10 backlight brightness levels, variable color hue
-    * To change the LED configuration, the `arch40firmware.json` file can be uploaded to [Keyboard Firmware Builder](https://kbfirmware.com/) and edited/recompiled as desired
 
 ## Note:
 * Kerf of plate and case layers is set to 0.15mm (typical for Ponoko/ Laserboost/ Lasergist)
 
 ## To-do:
-* Generate firmware for PCB with Pro Micro microcontroller
-* Add PCB + Pro Micro pinout table
-* Add PCB + Pro Micro firmware flashing instructions
 * Add image of default keymap
 
 ###### Model was created in Solidworks, then exported as STL/DXF. Feel free to use/modify/redistribute.
