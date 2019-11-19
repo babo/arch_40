@@ -44,7 +44,7 @@ ____
 * Adafruit USB-mini breakout board (or a simple female USB-mini)
 * WS2812B LED strips (optional)
 * (49) 1N4184 diodes
-* M2 Standoffs and screws (10mm length standoffs, 5mm length screws)
+* M2 Standoffs and screws 
 
 ____
 
