@@ -49,7 +49,7 @@ ____
 * M2 Standoffs and screws
     * 5mm screw length
     * 10mm standoff length for use with a **1.5mm metal plate** (0.5mm oversized)
-    * 12mm standoff length for use with a **3.0mm metal plate**
+    * 12mm standoff length for use with a **3.0mm acrylic plate**
 
 ____
 
