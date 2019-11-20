@@ -25,13 +25,14 @@
     * **Huge thanks to [ibnuda](https://github.com/ibnuda) for designing the PCB!**
 * Stacked acrylic layer case, acrylic/metal switch plate 
     * Layer dimensions and path lengths are outlined in `path_length.md`
-* Files for laser cutting by Ponoko/other services in `./illustrator_files`
-    * Includes case layer DXF files imported into Adobe Illustrator at 1:1 scale with units in millimeters
-    * `final_cut_layout.eps` is Ponoko's P3 size template with case layers, **without plate**
-        * Use this if you choose to go with a metal plate
-    * `final_cut_layout_plate.eps` is Ponoko's P3 size template with case layers, **with plate**
-        * Use this if you choose to go with an acrylic plate
+* Files for laser cutting by Ponoko/other services in `./illustrator_files` and `./inkscape_files`
+    * `./illustrator_files` includes case layer DXF files imported into Adobe Illustrator at 1:1 scale with units in millimeters
+        * `final_cut_layout.eps` is Ponoko's P3 size template with case layers, **without plate**
+            * Use this if you choose to go with a metal plate
+        * `final_cut_layout_plate.eps` is Ponoko's P3 size template with case layers, **with plate**
+            * Use this if you choose to go with an acrylic plate
 
+    * `./inkscape_files` includes pdf-compatible Adobe `.ai` files as well as `.SVG` files of the case layers and plate
 ____
 
 #### Component list:
