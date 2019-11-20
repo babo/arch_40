@@ -46,7 +46,10 @@ ____
 * Adafruit USB-mini breakout board (or a simple female USB-mini)
 * WS2812B LED strips (optional)
 * (49) 1N4184 diodes
-* M2 Standoffs and screws 
+* M2 Standoffs and screws
+    * 5mm screw length
+    * 10mm standoff length for use with a **1.5mm metal plate** (0.5mm oversized)
+    * 12mm standoff length for use with a **3.0mm metal plate**
 
 ____
 
@@ -116,7 +119,7 @@ r4 : F6             c4 : D7        c10 : D0
 #### PCB Builds:
 * Linux:
     * The Pro Micro controller can be flashed with [avrdude](https://www.nongnu.org/avrdude/)
-    * **Note:** Navigate to the `./firwmare` directory of the repo where the `arch40firmware_pcb.hex` file is to flash
+    * **Note:** Navigate to the `./firmware` directory of the repo where the `arch40firmware_pcb.hex` file is to flash
 ~~~
 $ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex
 ~~~
