@@ -42,8 +42,8 @@ ____
     * Teensy2.0 (if handwiring and not using PCB)
 * (49) Cherry MX style switches
 * (1) 2u Cherry style stabilizer
-    * **PCB-mounted** if using a 3.0mm acrylic switch plate
-    * **Plate-mounted** if using a 1.5mm metal switch plate
+    * **Plate-mounted** works perfectly with 1.5mm metal switch plate
+    * **Requires some modification** to work properly with 3.0mm acrylic plate
 * Adafruit USB-mini breakout board (or a simple female USB-mini)
 * WS2812B LED strips (optional)
 * (49) 1N4184 diodes
@@ -70,7 +70,7 @@ ____
 ____
 
 #### PCB:
-* PCB can be made by sending the zipped gerber files in `./pcb/arch_40_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com/quote#/?orderType=1&stencilWidth=100&stencilLength=100&stencilCounts=5&stencilLayer=2&stencilPly=1.6&steelmeshSellingPriceRecordNum=A8256537-5522-491C-965C-646F5842AEC9&purchaseNumber=)
+* PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com/quote#/?orderType=1&stencilWidth=100&stencilLength=100&stencilCounts=5&stencilLayer=2&stencilPly=1.6&steelmeshSellingPriceRecordNum=A8256537-5522-491C-965C-646F5842AEC9&purchaseNumber=)
 
 ![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
 
