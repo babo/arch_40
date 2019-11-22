@@ -60,12 +60,12 @@ ____
 3) `arch_40_case_layer2-3`
 4) `arch_40_case_layer2-3` (repeated)
 5) `arch_40_case_layer4`
-6) `arch_40_case_layer5`
+6) `arch_40_case_layer4` (repeated, if using PCB and Pro Micro)
+7) `arch_40_case_layer5`
 
-* **Note:** `arch_40_case_layer2-3` is designed to be used twice, it contains the cutout for the USB connection
-* `arch_40_case_layer4` can also be repeated to make more space for handwiring and LED strips
-    * This layer can be added to the laser cut layout by copying the `arch_40_case_layer4` file and adding it to the layout
-* Resulting case height with 3mm acrylic layers + 1.5mm metal plate is 16.5mm
+* **Note:** `arch_40_case_layer2-3` is intended to be used twice, it contains the cutout for the USB connection
+* **Note:**  `arch_40_case_layer4` needs to be repeated when using assembling with a PCB since the microcontroller's usb port requires additional clearance
+    * Can be omitted with handwired builds
 
 ____
 
@@ -149,5 +149,7 @@ $ teensy-loader-cli --mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
 
 ## To-do:
 * Add image of default keymap
+* Add update adobe illustrator EPS layouts to include two copies of layer4
+* change case layer filenames
 
 ###### Model was created in Solidworks, then exported as STL/DXF. Feel free to use/modify/redistribute.
