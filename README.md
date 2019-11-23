@@ -49,9 +49,8 @@ ____
 * (49) 1N4184 diodes
 * M2 Standoffs and screws
     * 5mm screw length
-    * 12mm standoff length for use with a **1.5mm metal plate** and PCB
-        * 10mm standoff length if handwiring, and omitting repeated `arch_40_case_layer4-5`
-    * 15mm standoff length for use with a **3.0mm acrylic plate** and PCB
+    * 10mm standoff length for use with a **1.5mm metal plate**
+    * 12mm standoff length for use with a **3.0mm acrylic plate**
 
 ____
 
@@ -60,18 +59,17 @@ ____
 2) `arch_40_plate`
 3) `arch_40_case_layer2-3`
 4) `arch_40_case_layer2-3` (repeated)
-5) `arch_40_case_layer4-5`
-6) `arch_40_case_layer4-5` (repeated, if using PCB and Pro Micro)
+5) `arch_40_case_layer4`
 7) `arch_40_case_layer5`
 
 * **Note:** `arch_40_case_layer2-3` is intended to be used twice, it contains the cutout for the USB connection
-* **Note:**  `arch_40_case_layer4-5` needs to be repeated when using assembling with a PCB since the microcontroller's header and usb port height require additional clearance
-    * This repeat can be omitted with handwired builds
 
 ____
 
 #### PCB:
 * PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com/quote#/?orderType=1&stencilWidth=100&stencilLength=100&stencilCounts=5&stencilLayer=2&stencilPly=1.6&steelmeshSellingPriceRecordNum=A8256537-5522-491C-965C-646F5842AEC9&purchaseNumber=)
+
+* **Note**: The Pro Micro controller needs to be soldered onto the PCB as close as possible, need to remove the spacers on the headers of the Pro Micro
 
 ![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
 
@@ -150,7 +148,5 @@ $ teensy-loader-cli --mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
 
 ## To-do:
 * Add image of default keymap
-* Add update adobe illustrator EPS layouts to include two copies of layer4
-* change case layer4 and 5 filenames
 
 ###### Model was created in Solidworks, then exported as STL/DXF. Feel free to use/modify/redistribute.
