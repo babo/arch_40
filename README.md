@@ -74,6 +74,7 @@ ____
 ![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
 
 ##### Pro Micro Pinout:
+* Diode direction: row to column
 * Column 0 = ESC key column
 * Row 0 = QWERTY row
 ~~~
@@ -95,6 +96,7 @@ ____
 ![matrix](https://i.imgur.com/ph9qbX4.jpg)
 
 ##### Teensy2.0 Pinout:
+* Diode direction: column to row
 * Column 0 = ESC key column
 * Row 0 = QWERTY row
 ~~~
