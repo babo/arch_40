@@ -71,7 +71,7 @@ ____
 
 * **Note**: The Pro Micro controller needs to be soldered onto the PCB as close as possible, need to remove the spacers on the headers of the Pro Micro
 
-![pcb_gerber_render](https://i.imgur.com/fFaRFvn.png)
+![pcb_image](https://i.imgur.com/BZhSc7j.jpg)
 
 ##### Pro Micro Pinout:
 * Diode direction: row to column
