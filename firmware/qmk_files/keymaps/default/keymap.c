@@ -9,19 +9,20 @@
 #define layer1 1
 #define layer2 2
 
-/* base
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
+    /* base
  *       .-----------------------------------------------------------------------------.
- *       | ESC |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  | BKS |
+ *       | ESC |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  | BKSP|
  *       |-----------------------------------------------------------------------------|
  *       | TAB |  A  |  S  |  D  |  F  |  G  | LT2 |  H  |  J  |  K  |  L  |  ;  | QUO |
  *       |-----------------------------------------------------------------------------|
  *       | SFT |  Z  |  X  |  C  |  V  |  B  | LT1 |  N  |  M  |  ,  |  .  |  /  | ENT |
  *       |-----------------------------------------------------------------------------|
- *       | CTL |     | ALT | GUI | LT1 | LT2 | SPC |  <  |  V  |   ^ |   > |     | SFT |
+ *       | CTL |     | ALT | GUI | LT1 | LT2 | SPC | LEFT| DOWN|  UP | RGHT|     | SFT |
  *       `-----------------------------------------------------------------------------`
 */
 
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [base] = LAYOUT( 
     KC_ESC,   KC_Q,     KC_W,     KC_E,     KC_R,          KC_T,                         KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     KC_BSPC ,
     KC_TAB,   KC_A,     KC_S,     KC_D,     KC_F,          KC_G,          LT(2,KC_TRNS), KC_H,     KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT ,
@@ -56,6 +57,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *       |-----------------------------------------------------------------------------|
  *       |     |     |     | Sa+ | Sa- |     |     |     |     |     |     |     | RST |
  *       `-----------------------------------------------------------------------------`
+ *
+ *      Tog = RGB_TOG (Toggle under glow)
+ *      Sa+ = RGB_SAI (Increase hue)
+ *      Sa- = RGB_SAD (Decrease saturation)
+ *      Hu+ = RGB_HUI (Increase hue)
+ *      Hu- = RGB_HUD (Decrease hue)
+ *      Va+ = RGB_VAI (Increase value/brightness)
+ *      Va- = RGB_VAD (Decrease value/brightness)
+ *
 */
   
   [layer2] = LAYOUT( 
