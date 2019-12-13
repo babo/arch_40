@@ -122,15 +122,20 @@ r4 : F6             c4 : D7        c10 : D0
 #### PCB Builds:
 * Linux:
     * The Pro Micro controller can be flashed with [avrdude](https://www.nongnu.org/avrdude/)
-    * **Note:** Navigate to the `./firmware` directory of the repo where the `arch40firmware_pcb.hex` file is to flash
-~~~
-$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex
-~~~
+    * **Note:** Navigate to the `./firmware` directory to flash the `arch40firmware_pcb.hex` file, or to the `./firmware/qmk_files` to flash the `arch40_promicro_default.hex` file
+    * They are the same keymap, the former was created with Keyboard Firmware Builder, and the latter with QMK
+
+`$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex`
+
+`$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40_promicro_default.hex`
+
 ##### LED Backlighting:
-* Default firmware `arch40firmware_pcb.hex` includes configuration for WS2812B LED backlighting strips
+* Default firmware `arch40firmware_pcb.hex` and `arch40_promicro_default.hex` includes configuration for WS2812B LED backlighting strips
     * The data pin for the LED's is set to pin D2 on the Pro Micro
     * Default 12 LED quantity, 10 backlight brightness levels, variable color hue
-    * To change the LED configuration, the `arch40firmware_pcb.json` file can be uploaded to [Keyboard Firmware Builder](https://kbfirmware.com/) and edited/recompiled as desired
+    * To change the LED configuration:
+        1) The `arch40firmware_pcb.json` file can be uploaded to [Keyboard Firmware Builder](https://kbfirmware.com/) and edited/recompiled as desired
+        2) The QMK source files can be edited manually in a text editor
 ____
 
 #### Handwired Builds:
