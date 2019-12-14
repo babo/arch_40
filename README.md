@@ -121,14 +121,21 @@ r4 : F6             c4 : D7        c10 : D0
 ## Firmware Flashing:
 
 #### PCB Builds:
-* Linux:
-    * The Pro Micro controller can be flashed with [avrdude](https://www.nongnu.org/avrdude/)
-    * **Note:** Navigate to the `./firmware` directory to flash the `arch40firmware_pcb.hex` file, or to the `./firmware/qmk_files` to flash the `arch40_promicro_default.hex` file
-    * They are the same keymap, the former was created with Keyboard Firmware Builder, and the latter with QMK
+##### Linux:
+* The Pro Micro controller can be flashed with [avrdude](https://www.nongnu.org/avrdude/)
 
-`$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex`
+    * Navigate to the `./firmware` directory to flash the `arch40firmware_pcb.hex` file:
 
-`$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40_promicro_default.hex`
+    `$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex`
+
+    * Or to the `./firmware/qmk_files` to flash the `arch40_promicro_default.hex` file
+
+    `$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40_promicro_default.hex`
+
+* They are the same keymap, the former was created with Keyboard Firmware Builder, and the latter with QMK
+
+##### Windows/MacOS:
+    * Can be done using [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
 
 ##### LED Backlighting:
 * Default firmware `arch40firmware_pcb.hex` and `arch40_promicro_default.hex` includes configuration for WS2812B LED backlighting strips
@@ -148,6 +155,7 @@ $ teensy-loader-cli --mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
 ~~~
 * MacOS/Windows:
     * Can be flashed with the [Teensy Loader Application](https://www.pjrc.com/teensy/loader.html)
+    * Or can be done using [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
 ##### LED Backlighting:
 * Default firmware `arch40firmware_hw.hex` includes configuration for WS2812B LED backlighting strips
     * The data pin for the LED's is set to pin B1 on the Teensy2.0
