@@ -7,4 +7,4 @@ $ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40_promicro_defaul
 ~~~
 
 ## Notes:
-* `info.json` files is not formatted like typical qmk json layout files, its taken from [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) 
+* `info.json` is the raw data from [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) converted by [QMK Firmware converter](https://qmk.fm/converter/)
