@@ -135,7 +135,7 @@ r4 : F6             c4 : D7        c10 : D0
 * They are the same keymap, the former was created with Keyboard Firmware Builder, and the latter with QMK
 
 ##### Windows/MacOS:
-    * Can be done using [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
+* Can be done using [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
 
 ##### LED Backlighting:
 * Default firmware `arch40firmware_pcb.hex` and `arch40_promicro_default.hex` includes configuration for WS2812B LED backlighting strips
