@@ -19,13 +19,15 @@
     * Ease of use coming from ANSI style layouts
     * Simplicity of a non-split keyboard
     * Compatability with Ergodox style keysets
+    * Compatible with Cherry MX, Alps, and Kailh Choc switches
+
+----
 
 ## Assembly:
-* Now includes option to assemble using a PCB and microcontroller, or can be handwired with a microcontroller
-    * **Huge thanks to [ibnuda](https://github.com/ibnuda) for designing the PCB!**
 * Stacked acrylic layer case, acrylic/metal switch plate 
     * Layer dimensions and path lengths are outlined in `path_length.md`
     * Alternatively, there is a 2-part case in `./cad_files/stl_files/3d_print_case` designed to be 3D printed and fastened together with machine screws
+* Can be built with a PCB and microcontroller, or can be handwired with a microcontroller
 * Files for laser cutting by Ponoko/other services in `./illustrator_files` and `./inkscape_files`
     * `./illustrator_files` includes case layer DXF files imported into Adobe Illustrator at 1:1 scale with units in millimeters
         * `final_cut_layout.eps` is Ponoko's P3 size template with case layers, **without plate**
@@ -68,6 +70,13 @@ ____
 ____
 
 #### PCB:
+##### Revision history:
+* rev 0: prototype, designed by [ibnuda](https://github.com/ibnuda)
+* rev 1: better case fitment, functionally same as rev 0
+* rev 1.1: added support for MX, Alps, Kailh Choc switches
+
+----
+
 * QMK files for PCB firmware in `./firmware/qmk_files`
 * PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com/quote#/?orderType=1&stencilWidth=100&stencilLength=100&stencilCounts=5&stencilLayer=2&stencilPly=1.6&steelmeshSellingPriceRecordNum=A8256537-5522-491C-965C-646F5842AEC9&purchaseNumber=)
 
