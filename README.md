@@ -78,9 +78,10 @@ ____
 ----
 
 * QMK files for PCB firmware in `./firmware/qmk_files`
-* PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com/quote#/?orderType=1&stencilWidth=100&stencilLength=100&stencilCounts=5&stencilLayer=2&stencilPly=1.6&steelmeshSellingPriceRecordNum=A8256537-5522-491C-965C-646F5842AEC9&purchaseNumber=)
-
+* PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1.1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com)
 * **Note**: The Pro Micro controller needs to be soldered onto the PCB as close as possible, need to remove the spacers on the headers of the Pro Micro
+
+----
 
 ![pcb_image](https://i.imgur.com/BZhSc7j.jpg)
 
