@@ -78,7 +78,7 @@ ____
 ----
 
 * QMK files for PCB firmware in `./firmware/qmk_files`
-* PCB can be made by sending the zipped gerber files in `./pcb/arch_40_rev1.1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com)
+* PCB can be made by sending the zipped gerber files in `./pcb/gerbers/arch_40_rev1.1_gerber.zip` to a PCB prototyping service such as [JLCPCB](https://jlcpcb.com)
 * **Note**: The Pro Micro controller needs to be soldered onto the PCB as close as possible, need to remove the spacers on the headers of the Pro Micro
 
 ----
