@@ -83,7 +83,7 @@ ____
 
 ----
 
-![pcb_image](https://i.imgur.com/BZhSc7j.jpg)
+![pcb_image](https://i.imgur.com/QTI14tu.jpg)
 
 ##### Pro Micro Pinout:
 * Diode direction: row to column
