@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "Arch 40"
 publishDir = "../docs"
 theme = "zen"
+relativeURLs = true
