@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch 40</title>
+    <link>https://babo.github.com/arch40/</link>
+    <description>Recent content on Arch 40</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Mar 2020 01:57:51 +0100</lastBuildDate>
+    <atom:link href="https://babo.github.com/arch40/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Keyboard</title>
+      <link>https://babo.github.com/arch40/posts/keyboard/</link>
+      <pubDate>Fri, 20 Mar 2020 01:57:51 +0100</pubDate>
+      <guid>https://babo.github.com/arch40/posts/keyboard/</guid>
+      <description>&lt;h2 id=&#34;arch-40&#34;&gt;Arch 40&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/mGvHH25.jpg&#34; alt=&#34;assembled_keyboard_1&#34;&gt;
+&lt;img src=&#34;https://i.imgur.com/xLTRGtF.jpg&#34; alt=&#34;assembled_keyboard_2&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;case-renders&#34;&gt;Case Renders:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/kMommcw.jpg&#34; alt=&#34;case_render_1&#34;&gt;
+&lt;img src=&#34;https://i.imgur.com/q0FfRJi.jpg&#34; alt=&#34;case_render_2&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;switch-plate&#34;&gt;Switch Plate:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/iD0z3CB.jpg&#34; alt=&#34;switch_plate_render&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;40-ortholinear--columnar-stagger-keyboard&#34;&gt;40% Ortholinear + Columnar Stagger Keyboard&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Inspired by the Ergodox, Atreus, Iris, Corne, and probably others&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Design goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiency and minimalism of a 40% form factor&lt;/li&gt;
+&lt;li&gt;Ergo benefits of tilted columnar stagger layout&lt;/li&gt;
+&lt;li&gt;Ease of use coming from ANSI style layouts&lt;/li&gt;
+&lt;li&gt;Simplicity of a non-split keyboard&lt;/li&gt;
+&lt;li&gt;Compatability with Ergodox style keysets&lt;/li&gt;
+&lt;li&gt;Compatible with Cherry MX, Alps, and Kailh Choc switches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;assembly&#34;&gt;Assembly:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stacked acrylic layer case, acrylic/metal switch plate
+&lt;ul&gt;
+&lt;li&gt;Layer dimensions and path lengths are outlined in &lt;code&gt;path_length.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Alternatively, there is a 2-part case in &lt;code&gt;./cad_files/stl_files/3d_print_case&lt;/code&gt; designed to be 3D printed and fastened together with machine screws&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Can be built with a PCB and microcontroller, or can be handwired with a microcontroller&lt;/li&gt;
+&lt;li&gt;Files for laser cutting by Ponoko/other services in &lt;code&gt;./illustrator_files&lt;/code&gt; and &lt;code&gt;./inkscape_files&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;./illustrator_files&lt;/code&gt; includes case layer DXF files imported into Adobe Illustrator at 1:1 scale with units in millimeters
+* &lt;code&gt;final_cut_layout.eps&lt;/code&gt; is Ponoko&amp;rsquo;s P3 size template with case layers, &lt;strong&gt;without plate&lt;/strong&gt;
+* Use this if you choose to go with a metal plate
+* &lt;code&gt;final_cut_layout_plate.eps&lt;/code&gt; is Ponoko&amp;rsquo;s P3 size template with case layers, &lt;strong&gt;with plate&lt;/strong&gt;
+* Use this if you choose to go with an acrylic plate&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;./inkscape_files&lt;/code&gt; includes pdf-compatible Adobe &lt;code&gt;.ai&lt;/code&gt; files as well as &lt;code&gt;.SVG&lt;/code&gt; files of the case layers and plate&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;component-list&#34;&gt;Component list:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Acrylic case layers + plate&lt;/li&gt;
+&lt;li&gt;PCB (optional, can be handwired as well)
+&lt;ul&gt;
+&lt;li&gt;Pro Micro (PCB is designed to use this microcontroller)&lt;/li&gt;
+&lt;li&gt;Teensy2.0 (if handwiring and not using PCB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(49) Cherry MX style switches&lt;/li&gt;
+&lt;li&gt;(1) 2u Cherry style stabilizer
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plate-mounted&lt;/strong&gt; works perfectly with 1.5mm metal switch plate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Requires some modification&lt;/strong&gt; to work properly with 3.0mm acrylic plate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Adafruit USB-mini breakout board (or a simple female USB-mini)&lt;/li&gt;
+&lt;li&gt;WS2812B LED strips (optional)&lt;/li&gt;
+&lt;li&gt;(49) 1N4184 diodes&lt;/li&gt;
+&lt;li&gt;M2 Standoffs and screws
+&lt;ul&gt;
+&lt;li&gt;5mm screw length&lt;/li&gt;
+&lt;li&gt;10mm standoff length for use with a &lt;strong&gt;1.5mm metal plate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;12mm standoff length for use with a &lt;strong&gt;3.0mm acrylic plate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;case-stack-order&#34;&gt;Case Stack Order:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;arch_40_case_layer0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arch_40_plate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arch_40_case_layer2-3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arch_40_case_layer2-3&lt;/code&gt; (repeated)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arch_40_case_layer4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arch_40_case_layer5&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code&gt;arch_40_case_layer2-3&lt;/code&gt; is intended to be used twice, it contains the cutout for the USB connection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;pcb&#34;&gt;PCB:&lt;/h4&gt;
+&lt;h5 id=&#34;revision-history&#34;&gt;Revision history:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;rev 0: prototype, designed by &lt;a href=&#34;https://github.com/ibnuda&#34;&gt;ibnuda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rev 1: better case fitment, functionally same as rev 0&lt;/li&gt;
+&lt;li&gt;rev 1.1: added support for MX, Alps, Kailh Choc switches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;QMK files for PCB firmware in &lt;code&gt;./firmware/qmk_files&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;PCB can be made by sending the zipped gerber files in &lt;code&gt;./pcb/gerbers/arch_40_rev1.1_gerber.zip&lt;/code&gt; to a PCB prototyping service such as &lt;a href=&#34;https://jlcpcb.com&#34;&gt;JLCPCB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt;: The Pro Micro controller needs to be soldered onto the PCB as close as possible, need to remove the spacers on the headers of the Pro Micro&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/QTI14tu.jpg&#34; alt=&#34;pcb_image&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;pro-micro-pinout&#34;&gt;Pro Micro Pinout:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Diode direction: row to column&lt;/li&gt;
+&lt;li&gt;Column 0 = ESC key column&lt;/li&gt;
+&lt;li&gt;Row 0 = QWERTY row&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Rows:              Columns:                            LED:
+-----------------------------------------------------------------
+r0 : D3            c0 : F4         c6 : B2             vcc : VCC
+r1 : D1            c1 : F5         c7 : B6             gnd : GND
+r2 : D0            c2 : F6         c8 : B5            data : D2
+r3 : D4            c3 : F7         c9 : B4
+                   c4 : B1        c10 : E6
+                   c5 : B3        c11 : D7
+                                  c12 : C6
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h4 id=&#34;handwiring&#34;&gt;Handwiring:&lt;/h4&gt;
+&lt;h5 id=&#34;matrix&#34;&gt;Matrix:&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/ph9qbX4.jpg&#34; alt=&#34;matrix&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;teensy20-pinout&#34;&gt;Teensy2.0 Pinout:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Diode direction: column to row&lt;/li&gt;
+&lt;li&gt;Column 0 = ESC key column&lt;/li&gt;
+&lt;li&gt;Row 0 = QWERTY row&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Rows:               Columns:                            LED:
+-----------------------------------------------------------------
+r0 : F0             c0 : F7         c6 : C6             vcc : VCC
+r1 : F1             c1 : B6         c7 : D3             gnd : GND
+r2 : F4             c2 : B5         c8 : D2            data : B1
+r3 : F5             c3 : B4         c9 : D1
+r4 : F6             c4 : D7        c10 : D0
+                    c5 : C7        c11 : B7
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;wiring-example&#34;&gt;Wiring Example:&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/JU2SwzP.png&#34; alt=&#34;wiring_example_no_led&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;wiring-example-with-underglow-leds&#34;&gt;Wiring Example With Underglow LED&amp;rsquo;s:&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/pITj7ql.jpg&#34; alt=&#34;wiring_example_with_led&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;firmware-flashing&#34;&gt;Firmware Flashing:&lt;/h2&gt;
+&lt;h4 id=&#34;pcb-builds&#34;&gt;PCB Builds:&lt;/h4&gt;
+&lt;h5 id=&#34;linux&#34;&gt;Linux:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Pro Micro controller can be flashed with &lt;a href=&#34;https://www.nongnu.org/avrdude/&#34;&gt;avrdude&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to the &lt;code&gt;./firmware&lt;/code&gt; directory to flash the &lt;code&gt;arch40firmware_pcb.hex&lt;/code&gt; file:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40firmware_pcb.hex&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Or to the &lt;code&gt;./firmware/qmk_files&lt;/code&gt; to flash the &lt;code&gt;arch40_promicro_default.hex&lt;/code&gt; file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 flash:w:arch40_promicro_default.hex&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They are the same keymap, the former was created with Keyboard Firmware Builder, and the latter with QMK&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;windowsmacos&#34;&gt;Windows/MacOS:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Can be done using &lt;a href=&#34;https://github.com/qmk/qmk_toolbox&#34;&gt;QMK Toolbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;led-backlighting&#34;&gt;LED Backlighting:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Default firmware &lt;code&gt;arch40firmware_pcb.hex&lt;/code&gt; and &lt;code&gt;arch40_promicro_default.hex&lt;/code&gt; includes configuration for WS2812B LED backlighting strips
+&lt;ul&gt;
+&lt;li&gt;The data pin for the LED&amp;rsquo;s is set to pin D2 on the Pro Micro&lt;/li&gt;
+&lt;li&gt;Default 12 LED quantity, 10 backlight brightness levels, variable color hue&lt;/li&gt;
+&lt;li&gt;To change the LED configuration:
+1) The &lt;code&gt;arch40firmware_pcb.json&lt;/code&gt; file can be uploaded to &lt;a href=&#34;https://kbfirmware.com/&#34;&gt;Keyboard Firmware Builder&lt;/a&gt; and edited/recompiled as desired
+2) The QMK source files can be edited manually in a text editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;handwired-builds&#34;&gt;Handwired Builds:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux:
+&lt;ul&gt;
+&lt;li&gt;The Teensy2.0 controller can be flashed with the &lt;a href=&#34;https://www.pjrc.com/teensy/loader_cli.html&#34;&gt;teensy-loader-cli&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ teensy-loader-cli --mcu=atmega32u4 -w -v ./firmware/arch40firmware_hw.hex
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;MacOS/Windows:
+&lt;ul&gt;
+&lt;li&gt;Can be flashed with the &lt;a href=&#34;https://www.pjrc.com/teensy/loader.html&#34;&gt;Teensy Loader Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Or can be done using &lt;a href=&#34;https://github.com/qmk/qmk_toolbox&#34;&gt;QMK Toolbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;led-backlighting-1&#34;&gt;LED Backlighting:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Default firmware &lt;code&gt;arch40firmware_hw.hex&lt;/code&gt; includes configuration for WS2812B LED backlighting strips
+&lt;ul&gt;
+&lt;li&gt;The data pin for the LED&amp;rsquo;s is set to pin B1 on the Teensy2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;note&#34;&gt;Note:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kerf of plate and case layers is set to 0.15mm (typical for Ponoko/ Laserboost/ Lasergist)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;to-do&#34;&gt;To-do:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add image of default keymap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;model-was-created-in-solidworks-then-exported-as-stldxf-feel-free-to-usemodifyredistribute&#34;&gt;Model was created in Solidworks, then exported as STL/DXF. Feel free to use/modify/redistribute.&lt;/h6&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
