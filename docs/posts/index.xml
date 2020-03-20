@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Arch 40</title>
-    <link>https://babo.github.com/arch_40/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Arch 40</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Mar 2020 01:57:51 +0100</lastBuildDate>
-    <atom:link href="https://babo.github.com/arch_40/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Keyboard</title>
-      <link>https://babo.github.com/arch_40/posts/keyboard/</link>
+      <link>/posts/keyboard/</link>
       <pubDate>Fri, 20 Mar 2020 01:57:51 +0100</pubDate>
-      <guid>https://babo.github.com/arch_40/posts/keyboard/</guid>
+      <guid>/posts/keyboard/</guid>
       <description>&lt;h2 id=&#34;arch-40&#34;&gt;Arch 40&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/mGvHH25.jpg&#34; alt=&#34;assembled_keyboard_1&#34;&gt;
 &lt;img src=&#34;https://i.imgur.com/xLTRGtF.jpg&#34; alt=&#34;assembled_keyboard_2&#34;&gt;&lt;/p&gt;
@@ -235,9 +235,9 @@ r4 : F6             c4 : D7        c10 : D0
     
     <item>
       <title>Split Keyboard</title>
-      <link>https://babo.github.com/arch_40/posts/split/</link>
+      <link>/posts/split/</link>
       <pubDate>Fri, 20 Mar 2020 01:57:51 +0100</pubDate>
-      <guid>https://babo.github.com/arch_40/posts/split/</guid>
+      <guid>/posts/split/</guid>
       <description>&lt;h1 id=&#34;split-it&#34;&gt;Split it&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;../images/rozsda.jpg&#34; alt=&#34;a keyboard&#34;&gt;&lt;/p&gt;
 </description>

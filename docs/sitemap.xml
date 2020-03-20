@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://babo.github.com/arch_40/</loc>
+    <loc>/</loc>
     <lastmod>2020-03-20T01:57:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://babo.github.com/arch_40/posts/keyboard/</loc>
+    <loc>/posts/keyboard/</loc>
     <lastmod>2020-03-20T01:57:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://babo.github.com/arch_40/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-03-20T01:57:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://babo.github.com/arch_40/posts/split/</loc>
+    <loc>/posts/split/</loc>
     <lastmod>2020-03-20T01:57:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://babo.github.com/arch_40/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://babo.github.com/arch_40/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
