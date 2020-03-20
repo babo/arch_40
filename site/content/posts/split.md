@@ -5,4 +5,4 @@ draft: true
 ---
 # Split it
 
-![a keyboard](images/rozsda.jpg)
+![a keyboard](/images/rozsda.jpg)
