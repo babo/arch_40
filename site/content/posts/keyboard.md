@@ -2,6 +2,7 @@
 title: "Keyboard"
 date: 2020-03-20T01:57:51+01:00
 draft: false
+summary: A unique aproch
 ---
 ## Arch 40
 

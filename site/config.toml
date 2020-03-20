@@ -4,3 +4,8 @@ title = "Arch 40"
 publishDir = "../docs"
 theme = "zen"
 relativeURLs = false
+themesDir = "themes"
+[params]
+  logo = true
+  themeColor = "#7facb5"
+  footer = "An [example.org](https://example.org/) production."
