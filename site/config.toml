@@ -1,4 +1,4 @@
-baseURL = "https://babo.github.com/arch40/"
+baseURL = "https://babo.github.com/arch_40/"
 languageCode = "en-us"
 title = "Arch 40"
 publishDir = "../docs"
